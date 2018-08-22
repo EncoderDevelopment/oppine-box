@@ -1,0 +1,12 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- botão pressionado -->
+    <item android:drawable="@layout/celula_tabela_clicado" android:state_pressed="true"/>
+
+    <!-- focado -->
+    <item android:drawable="@layout/fundo_icone" android:state_focused="true"/>
+
+    <!-- padrão -->
+    <item android:drawable="@layout/celula_tabela"/>
+
+</selector>

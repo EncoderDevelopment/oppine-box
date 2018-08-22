@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:animateLayoutChanges="@android:anim/slide_in_left"
+    android:background="@layout/bacground" 
+    android:padding="2sp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@layout/selector_lista_layout"
+        android:cacheColorHint="@android:color/transparent"
+        android:orientation="horizontal"
+        android:padding="10sp" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/iconeCategoria"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="0.6"
+                android:background="@layout/fundo_icone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="100dp" >
+
+            <TextView
+                android:id="@+id/txCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.6"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>

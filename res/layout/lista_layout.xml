@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@layout/bacground"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/progressbar_loading_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="150dp"
+        android:gravity="center_vertical|center_horizontal"/>
+
+       <ListView
+        android:id="@+id/listViewEfeitoFadeIn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="@android:anim/fade_in"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:padding="5sp" />
+
+</LinearLayout>

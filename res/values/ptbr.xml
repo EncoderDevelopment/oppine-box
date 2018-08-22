@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ptbr_texto_botao_apresentacao">Toque na tela</string>
+    <string name="ptbr_texto_botao_fechar">Fechar</string>
+    
+    
+    <string name="ptbr_texto_cabecalho_sobre">Sobre o OppineBox</string>
+    <string name="ptbr_texto_cabecalho_ajuda">Sobre o OppineBox</string>
+    
+    <string name="ptbr_texto_cabecalho_sair">Sair do OppineBox</string>
+    
+    <string name="ptbr_texto_botao_sim">Sim</string>
+    <string name="ptbr_texto_botao_nao">Não</string>
+    
+    <string name="ptbr_texto_confirmacao_sair1">Você sairá do OppineBox.</string>
+    <string name="ptbr_texto_confirmacao_sair2">Deseja continuar?</string>
+    
+    
+    <string name="ptbr_texto_botao_cancelar">Cancelar</string>
+
+    
+    <string name="ptbr_texto_opcao_voltar_desabilitado">Desculpe, essa opção esta desabilitada! Não é possivel voltar no momento!</string>
+    
+    <string name="ptbr_escolha_melhor_atendimento">Opinião</string>
+    <string name="ptbr_informe_como_foi_atendido">Sugestão</string>
+    <string name="ptbr_como_funciona">Tutorial</string>
+    
+    
+</resources>

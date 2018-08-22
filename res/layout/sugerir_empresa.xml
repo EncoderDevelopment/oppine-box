@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_marginBottom="20dp">
+
+    <ScrollView
+        android:id="@+id/ScrollView01sugerir"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" 
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewIntroducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Sugerir Empresa "
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutNPergunta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewPergunta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Já é um cliente?"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/comRespostaSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:button="@layout/custom_checkbox_design"
+                    android:text="Sim"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/comRespostaNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:button="@layout/custom_checkbox_design"
+                    android:text="Não"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewNomeEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome da empresa"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutNomeEmpresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/editTextNomeEmpresa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Nome da empresa sugerida"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#CCCCCC" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewFoneEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone da empresa, ex: (99)9999-9999"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutFoneEmpresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/editTextTelefoneEmpresa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Número do telefone com ddd"
+                    android:inputType="phone"
+                    android:textColorHint="#CCCCCC" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewNomeFuncionario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome do funcionário"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutNomeFuncionario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/editTextNomeFuncionario"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Nome do funcionário que lhe atendeu"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#CCCCCC" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewComentario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comentários e observações"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutComentario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/editTextComentario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="102dp"
+                    android:layout_weight="1"
+                    android:hint="Adicione comentários ou observações sobre a empresa"
+                    android:inputType="textMultiLine"
+                    android:textColorHint="#CCCCCC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/btEnviar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/botao_enviar" />
+
+                <ImageButton
+                    android:id="@+id/btCancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/botao_cancelar" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
